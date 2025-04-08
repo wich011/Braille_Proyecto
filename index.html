@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; media-src *; script-src 'self' 'unsafe-inline'; connect-src 'self'">
+    <title>Traductor de Braille a Español</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Traductor de Braille a Español</h1>
+        
+        <!-- Sección de salida con dos bloques -->
+        <div class="outputs-wrapper">
+            <div class="output-block">
+                <div class="output-label">Texto en Español:</div>
+                <div class="output-container">
+                    <p id="spanish-output"></p>
+                </div>
+            </div>
+            <div class="output-block">
+                <div class="output-label">Representación en Braille:</div>
+                <div class="output-container">
+                    <p id="braille-output" class="braille-output"></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Botones de control -->
+<div class="control-buttons">
+    <button id="space-button" class="control-button">Espacio</button>
+    <button id="backspace-button" class="control-button">Borrar último</button>
+    <button id="clear-button" class="control-button clear">Limpiar todo</button>
+    <button id="mic-button" class="control-button mic-button"><span class="mic-icon">🎙️</span> Hablar</button>
+</div>
+        
+        <!-- Sección de minúsculas -->
+        <div class="button-section">
+            <h3 class="section-title">Minúsculas</h3>
+            <div class="buttons-container" id="lowercase-container"></div>
+        </div>
+        
+        <!-- Sección de mayúsculas -->
+        <div class="button-section">
+            <h3 class="section-title">Mayúsculas</h3>
+            <div class="buttons-container" id="uppercase-container"></div>
+        </div>
+        
+        <!-- Sección de números -->
+        <div class="button-section">
+            <h3 class="section-title">Números</h3>
+            <div class="buttons-container" id="numbers-container"></div>
+        </div>
+        
+        <!-- Sección de signos de puntuación -->
+        <div class="button-section">
+            <h3 class="section-title">Signos de puntuación</h3>
+            <div class="buttons-container" id="punctuation-container"></div>
+        </div>
+        
+        <!-- Sección de símbolos -->
+        <div class="button-section">
+            <h3 class="section-title">Símbolos</h3>
+            <div class="buttons-container" id="symbols-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
